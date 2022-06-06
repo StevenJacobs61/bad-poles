@@ -1,0 +1,15 @@
+.about__header {
+  font-size: 4.4rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.about__container {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+  .about__header {
+    font-size: 4.5rem;
+  }
+}

@@ -1,0 +1,24 @@
+.roadmap__header {
+  text-align: center;
+  padding: 3rem 0 2rem;
+
+  font-size: 5rem;
+  font-weight: 550;
+  text-shadow: 0px 0px 10px var(--color-gold),
+    0px 0px 6px var(--color-hlight-blue);
+}
+.roadmao__section {
+  padding-bottom: 3rem;
+}
+.roadmap__icon {
+  margin-left: 4rem;
+  /* box-shadow: 0 0 60px 6px var(--color-gold); */
+  fill: var(--color-hlight-blue);
+  opacity: 0.8;
+}
+.roadmap__box {
+  opacity: 0.9;
+}
+.roadmap__box:hover {
+  transform: scale(1.02);
+}

@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import Home from './pages/home';
+import Art from './pages/art';
+import About from './pages/about';
+import HallOffFame from './pages/hall-of-fame';
+import Exclusive from './pages/exclusive';
+import Mint from './pages/mint';
+import RoadMapPage from './pages/roadmap-page';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<>
+    
+      <Routes>
+      <Route path='/' element={<Home />}/>
+      <Route path='/about' element={<About />}/>
+      <Route path='/roadmap-page' element={<RoadMapPage />}/>
+      <Route path='/art' element={<Art />}/>
+      <Route path='/hall-of-fame' element={<HallOffFame />}/>
+      <Route path='/exclusive' element={<Exclusive />}/>
+      <Route path='/mint' element={<Mint />}/>
+      </Routes>
+    
+    
+    </>
+  
   );
 }
 

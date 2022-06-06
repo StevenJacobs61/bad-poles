@@ -1,0 +1,114 @@
+.faq__section {
+}
+
+.faq__container {
+  padding: 0rem 5rem 5rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--color-gold);
+  background: var(--color-white);
+  opacity: 0.95;
+}
+.faq__header {
+  padding: 0 0 1rem 2.2rem;
+  width: 100%;
+  text-shadow: 0 0 3px var(--color-gold);
+}
+.faq__question {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-shadow: 0 0 1.5px var(--color-gold);
+  border-left: 2px solid var(--color-black);
+  max-width: 100%;
+  margin: 1rem 10rem 0rem 0.5rem;
+  padding-left: 2rem;
+
+  display: block;
+}
+.faq-chevron {
+  font-size: 5rem;
+  padding-left: 2rem;
+  cursor: pointer;
+  color: var(--color-gold);
+}
+.faq-chevron:hover {
+  color: var(--color-black);
+}
+
+.faq-chevron__expanded {
+  transform: rotate(90deg);
+  color: var(--color-black);
+}
+.faq__list {
+}
+.collapsible__faq {
+  opacity: 0;
+  max-height: 0;
+}
+.faq__expanded {
+  opacity: 1;
+  max-height: 100vh;
+  margin: 3rem 0 2rem 2rem;
+}
+.faq__item {
+  font-size: 2.5rem;
+  text-shadow: 0 0 2.5px var(--color-gold);
+}
+.faq__link {
+  color: var(--color-gold);
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .faq__question {
+    font-size: 3.5rem;
+    padding-bottom: 0;
+  }
+  .faq-chevron {
+    font-size: 5rem;
+    padding-left: 3rem;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .faq__item {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .faq__question {
+    padding-left: 3rem;
+    margin-left: 3rem;
+  }
+  .faq-chevron {
+    padding: 0.1rem 4rem 0;
+  }
+  .faq__item {
+    font-size: 5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .faq__container {
+  }
+  .faq__question {
+    display: flex;
+  }
+  .faq-chevron {
+    padding: 3rem 5rem 0;
+    font-size: 6rem;
+  }
+  .faq__item {
+    font-size: 3.5rem;
+  }
+  .faq__header {
+    padding: 1rem 0 0 2%;
+    display: inline-block;
+  }
+  .faq__list__container {
+    columns: 2;
+  }
+  .item__container {
+    width: 50%;
+    float: left;
+  }
+}

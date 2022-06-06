@@ -1,0 +1,29 @@
+.home_banner__section {
+  border-top: var(--bdr-blue);
+  border-bottom: var(--bdr-blue);
+  padding: 0rem;
+  background: rgb(83, 83, 83);
+}
+.home_banner__header {
+  text-align: center;
+  color: var(--color-white);
+  opacity: 0.45;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+@media (min-width: 768px) {
+  .home_banner__header {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    word-spacing: 0.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .home_banner__header {
+    font-size: 2.2rem;
+    letter-spacing: 1.3rem;
+    word-spacing: 0.7rem;
+  }
+}
